@@ -219,9 +219,10 @@
     {% if doctors is not None %}
     <div class="contentTable">
         <ul>
+             {% for i in doctors %}
             <li>
-                <img src="assets/images/1.jpg" alt="" />
-                {% for i in doctors %}
+                <!--在image存入字典前，先批量加入引号 -->
+                <img src={{ i['image'] }} alt="" />
                 <div>
                     <p class="name">{{ i['name'] }}}</p>
                     <p><span>{{ i['job_title'] }}</span></p>
@@ -229,9 +230,8 @@
                     <p><span>{{ i['department'] }}</span></p>
                     <p><span>擅长治疗：{{ i['work_on'] }}</span></p>
                 </div>
-                {% endfor %}
-
             </li>
+            {% endfor %}
         </ul>
     </div>
     {% endif %}

@@ -216,6 +216,7 @@
 </select> 
     </div>
 <!-- Show the doctors' information -->
+    {% if doctors is not None %}
     <div class="contentTable">
         <ul>
             <li>
@@ -233,6 +234,7 @@
             </li>
         </ul>
     </div>
+    {% endif %}
 <!-- End -->
 
     <div style="margin-left: 40%;">

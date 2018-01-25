@@ -1,0 +1,424 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!--Google fonts links-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+
+    <!--For Plugins external css-->
+    <link rel="stylesheet" href="assets/css/plugins.css" />
+    <link rel="stylesheet" href="assets/css/roboto-webfont.css" />
+
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <style type="text/css">
+        p,span,label{
+            font-family: "微软雅黑";
+        }
+        .home{
+            width: 100%;
+            height: 900px;
+            padding: 0.1px;
+        }
+        .searchGroup{
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 30px;
+            position: relative;
+        }
+        .searchBtn{
+            position: absolute !important;
+            right: 0;
+            top: -22px;
+        }
+        .tab{
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 40px;
+        }
+        .btn-default{
+            /*background-color: #fff !important;*/
+        }
+        .contentTable{
+            width: 75%;
+            height: 600px;
+            overflow-y: scroll;
+            margin-top: 40px;
+            background-color: white;
+            margin-left: 12.5%;
+        }
+        .contentTable ul li{
+            width: 100%;
+            border-bottom: 1px solid #000;
+            padding:  20px;
+            float: left;
+        }
+        .contentTable ul li img{
+            width: 120px;
+            height: 150px;
+        }
+        .contentTable ul li div{
+            width: 80%;
+            float: right;
+        }
+        .contentTable ul li div>p>span:nth-of-type(2){
+            margin-left: 200px;
+        }
+        .contentTable ul li div:last-of-type{
+            margin-top: 20px;
+            width: 100%;
+        }
+        .citys{
+        	float:right;
+        	margin-right: 17%;
+        	margin-top: -3.2rem;
+        	z-index: 99999;
+        }
+        .citys select{
+        	width: 100px;
+        	height: 50px;
+        	background-color: skyblue;
+        }
+        .btn{
+        	width: 150px;
+        }
+    </style>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Sections -->
+<section id="social" class="social">
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="social-wrapper">
+                <div class="col-md-6">
+                    <div class="social-icon">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-contact">
+                        <a href="#"><i class="fa fa-phone"></i>+010 1234567</a>
+                        <a href="#"><i class="fa fa-envelope"></i>datacloud@ruc.edu.cn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /container -->
+</section>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="assets/images/DEKE.jpg" alt="Logo" /></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="mainPage.jsp">主页</a></li>
+                <li><a href="searchPage.jsp">产品</a></li>
+                <li><a href="mainPage.jsp#service">服务</a></li>
+                <li><a href="mainPage.jsp#price">价格</a></li>
+                <li><a href="mainPage.jsp#contact">联系我们</a></li>
+                <li class="login"><a href="#">登录</a></li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--Home page style-->
+<header id="home" class="home">
+    <div class="searchGroup">
+        <input type="text" class="form-control" placeholder="请输入搜索内容">
+        <button class="btn btn-default searchBtn" type="button">搜索</button>
+    </div>
+    <div class="tab">
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-info">综合排序</button>
+            <button type="button" class="btn btn-info">医院等级</button>
+            <button type="button" class="btn btn-info">距离</button>
+            <button type="button" class="btn btn-info">从医年份</button>
+        </div>
+    </div>
+    <div class="citys">
+<select id="province" size=1 onchange="getCity()"> 
+<option value= 0 >北京</option> 
+<option value= 1 >上海</option> 
+<option value= 2 >天津</option> 
+<option value= 3 >重庆</option> 
+<option value= 4 >河北</option> 
+<option value= 5 >山西</option> 
+<option value= 6 >内蒙古</option> 
+<option value= 7 >辽宁</option> 
+<option value= 8 >吉林</option> 
+<option value= 9 >黑龙江</option> 
+<option value= 10 >江苏</option> 
+<option value= 11 >浙江</option> 
+<option value= 12 >安徽</option> 
+<option value= 13 >福建</option> 
+<option value= 14 >江西</option> 
+<option value= 15 >山东</option> 
+<option value= 16 >河南</option> 
+<option value= 17 >湖北</option> 
+<option value= 18 >湖南</option> 
+<option value= 19 >广东</option> 
+<option value= 20 >广西</option> 
+<option value= 21 >海南</option> 
+<option value= 22 >四川</option> 
+<option value= 23 >贵州</option> 
+<option value= 24 >云南</option> 
+<option value= 25 >西藏</option> 
+<option value= 26 >陕西</option> 
+<option value= 27 >甘肃</option> 
+<option value= 28 >宁夏</option> 
+<option value= 29 >青海</option> 
+<option value= 30 >新疆</option> 
+<option value= 31 >香港</option> 
+<option value= 32 >澳门</option> 
+<option value= 33 >台湾</option> 
+</select>
+ 
+<select id="city" style="width:100px"> 
+</select> 
+    </div>
+<!-- Show the doctors' information -->
+    <div class="contentTable">
+        <ul>
+            <li>
+                <img src="assets/images/1.jpg" alt="" />
+                {% for i in doctors %}
+                <div>
+                    <p class="name">{{ i['name'] }}}</p>
+                    <p><span>{{ i['job_title'] }}</span></p>
+                    <p><span>{{ i['hospital'] }}</span></p>
+                    <p><span>{{ i['department'] }}</span></p>
+                    <p><span>擅长治疗：{{ i['work_on'] }}</span></p>
+                </div>
+                {% endfor %}
+
+            </li>
+        </ul>
+    </div>
+<!-- End -->
+
+    <div style="margin-left: 40%;">
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<section id="footer-menu" class="sections footer-menu">
+    <div class="container">
+        <div class="row">
+            <div class="footer-menu-wrapper">
+
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="menu-item">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li>POWER BI DESKTOP</li>
+                                <li>MOBILE</li>
+                                <li>SEE ALL DOWNLOADS</li>
+                                <li>POWER BI DESKTOP</li>
+                                <li>MOBILE</li>
+                                <li>SEE ALL DOWNLOADS</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="menu-item">
+                            <h5>Legal</h5>
+                            <ul>
+                                <li>PRIVACY & COOKIES</li>
+                                <li>TERMS OF USE</li>
+                                <li>TRADEMARKS</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="menu-item">
+                            <h5>Information</h5>
+                            <ul>
+                                <li>SUPPORT</li>
+                                <li>DEVELOPERS</li>
+                                <li>BLOG</li>
+                                <li>NEWSLETTER</li>
+                                <li>PYRAMID ANALYTICS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="menu-item">
+                        <h5>Newsletter</h5>
+                        <p>Insights await in your company's data. Bring them into focus with BlueLance.</p>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter your email address">
+                            <input type="submit" class="form-control" value="Use It Free">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Footer-->
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-wrapper">
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-brand">
+                        <img src="assets/images/DEKE.png" alt="logo" />
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="copyright">
+                        <p>Copyright &copy; 2018. DEKE. RENMIN UNIVERSITY OF CHINA.</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div class="scrollup">
+    <a href="#"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+
+<script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/modernizr.js"></script>
+<script src="assets/js/main.js"></script>
+<script type="text/javascript">
+	var arr = new  Array();
+arr[0 ]="东城,西城,崇文,宣武,朝阳,丰台,石景山,海淀,门头沟,房山,通州,顺义,昌平,大兴,平谷,怀柔,密云,延庆" 
+arr[1 ]="黄浦,卢湾,徐汇,长宁,静安,普陀,闸北,虹口,杨浦,闵行,宝山,嘉定,浦东,金山,松江,青浦,南汇,奉贤,崇明" 
+arr[2 ]="和平,东丽,河东,西青,河西,津南,南开,北辰,河北,武清,红挢,塘沽,汉沽,大港,宁河,静海,宝坻,蓟县" 
+arr[3 ]="万州,涪陵,渝中,大渡口,江北,沙坪坝,九龙坡,南岸,北碚,万盛,双挢,渝北,巴南,黔江,长寿,綦江,潼南,铜梁,大足,荣昌,壁山,梁平,城口,丰都,垫江,武隆,忠县,开县,云阳,奉节,巫山,巫溪,石柱,秀山,酉阳,彭水,江津,合川,永川,南川" 
+arr[4 ]="石家庄,邯郸,邢台,保定,张家口,承德,廊坊,唐山,秦皇岛,沧州,衡水" 
+arr[5 ]="太原,大同,阳泉,长治,晋城,朔州,吕梁,忻州,晋中,临汾,运城" 
+arr[6 ]="呼和浩特,包头,乌海,赤峰,呼伦贝尔盟,阿拉善盟,哲里木盟,兴安盟,乌兰察布盟,锡林郭勒盟,巴彦淖尔盟,伊克昭盟" 
+arr[7 ]="沈阳,大连,鞍山,抚顺,本溪,丹东,锦州,营口,阜新,辽阳,盘锦,铁岭,朝阳,葫芦岛" 
+arr[8 ]="长春,吉林,四平,辽源,通化,白山,松原,白城,延边" 
+arr[9 ]="哈尔滨,齐齐哈尔,牡丹江,佳木斯,大庆,绥化,鹤岗,鸡西,黑河,双鸭山,伊春,七台河,大兴安岭" 
+arr[10 ]="南京,镇江,苏州,南通,扬州,盐城,徐州,连云港,常州,无锡,宿迁,泰州,淮安" 
+arr[11 ]="杭州,宁波,温州,嘉兴,湖州,绍兴,金华,衢州,舟山,台州,丽水" 
+arr[12 ]="合肥,芜湖,蚌埠,马鞍山,淮北,铜陵,安庆,黄山,滁州,宿州,池州,淮南,巢湖,阜阳,六安,宣城,亳州" 
+arr[13 ]="福州,厦门,莆田,三明,泉州,漳州,南平,龙岩,宁德" 
+arr[14 ]="南昌市,景德镇,九江,鹰潭,萍乡,新馀,赣州,吉安,宜春,抚州,上饶" 
+arr[15 ]="济南,青岛,淄博,枣庄,东营,烟台,潍坊,济宁,泰安,威海,日照,莱芜,临沂,德州,聊城,滨州,菏泽" 
+arr[16 ]="郑州,开封,洛阳,平顶山,安阳,鹤壁,新乡,焦作,濮阳,许昌,漯河,三门峡,南阳,商丘,信阳,周口,驻马店,济源" 
+arr[17 ]="武汉,宜昌,荆州,襄樊,黄石,荆门,黄冈,十堰,恩施,潜江,天门,仙桃,随州,咸宁,孝感,鄂州" 
+arr[18 ]="长沙,常德,株洲,湘潭,衡阳,岳阳,邵阳,益阳,娄底,怀化,郴州,永州,湘西,张家界" 
+arr[19 ]="广州,深圳,珠海,汕头,东莞,中山,佛山,韶关,江门,湛江,茂名,肇庆,惠州,梅州,汕尾,河源,阳江,清远,潮州,揭阳,云浮" 
+arr[20 ]="南宁,柳州,桂林,梧州,北海,防城港,钦州,贵港,玉林,南宁地区,柳州地区,贺州,百色,河池" 
+arr[21 ]="海口,三亚" 
+arr[22 ]="成都,绵阳,德阳,自贡,攀枝花,广元,内江,乐山,南充,宜宾,广安,达川,雅安,眉山,甘孜,凉山,泸州" 
+arr[23 ]="贵阳,六盘水,遵义,安顺,铜仁,黔西南,毕节,黔东南,黔南" 
+arr[24 ]="昆明,大理,曲靖,玉溪,昭通,楚雄,红河,文山,思茅,西双版纳,保山,德宏,丽江,怒江,迪庆,临沧" 
+arr[25 ]="拉萨,日喀则,山南,林芝,昌都,阿里,那曲" 
+arr[26 ]="西安,宝鸡,咸阳,铜川,渭南,延安,榆林,汉中,安康,商洛" 
+arr[27 ]="兰州,嘉峪关,金昌,白银,天水,酒泉,张掖,武威,定西,陇南,平凉,庆阳,临夏,甘南" 
+arr[28 ]="银川,石嘴山,吴忠,固原" 
+arr[29 ]="西宁,海东,海南,海北,黄南,玉树,果洛,海西" 
+arr[30 ]="乌鲁木齐,石河子,克拉玛依,伊犁,巴音郭勒,昌吉,克孜勒苏柯尔克孜,博 尔塔拉,吐鲁番,哈密,喀什,和田,阿克苏" 
+arr[31 ]="香港" 
+arr[32 ]="澳门" 
+arr[33 ]="台北,高雄,台中,台南,屏东,南投,云林,新竹,彰化,苗栗,嘉义,花莲,桃园,宜兰,基隆,台东,金门,马祖,澎湖" 
+
+function init()
+{
+    var city = document.getElementById("city");
+    var cityArr = arr[0].split(",");
+    for(var i=0;i<cityArr.length;i++)
+    {
+             city[i]=new Option(cityArr[i],cityArr[i]);
+    }
+}
+
+function getCity()
+{    
+    var pro = document.getElementById("province");
+    var city = document.getElementById("city");
+    var index = pro.selectedIndex;
+    var cityArr = arr[index].split(",");   
+    
+    city.length = 0;
+    //将城市数组中的值填充到城市下拉框中
+    for(var i=0;i<cityArr.length;i++)
+    {
+             city[i]=new Option(cityArr[i],cityArr[i]);
+         }
+}
+</script>
+</body>
+</html>
+

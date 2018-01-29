@@ -11,7 +11,7 @@ The large amount of doctors' information were captured from [39 Healthy](http://
 
 ## Construction
 - web_crawler: Web crawlers for capturing data from medical websites.
-- web: The pages of our platform.
+- templates: The pages of our platform.
 - parse_work_on: Parse the work_on text to several key words.
 - other: Test or process files.
 - venv: Auto create by Pycharm IDE.
